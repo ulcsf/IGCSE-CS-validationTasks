@@ -2,6 +2,7 @@
 students = ["Bill","Ben","Katie","Sam","Jane"]
 finalExamGrades = [0]*len(students)
 
+
 #input the final grades
 '''
 TASK 2: Type Check
