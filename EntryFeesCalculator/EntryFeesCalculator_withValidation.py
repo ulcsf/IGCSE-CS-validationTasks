@@ -7,17 +7,16 @@ discount = 5        #Discount as %age
 while True:
     try:
         adultTickets = int(input("How many ADULT tickets do you require: "))
+        while adultTickets < 0:
+            print("You must enter a valid number")
+            adultTickets = int(input("How many ADULT tickets do you require: "))
+        break
     except ValueError:
         print("You must enter a whole number 0 and higher")
-    while adultTickets < 0:
-        print("You must enter a valid number")
-        adultTickets = int(input("How many ADULT tickets do you require: "))
-    break
-
 while True:
     try:
         childTickets = int(input("How many CHILD tickets do you require: "))
-        while adultTickets < 0:
+        while childTickets < 0:
             print("You must enter a valid number")
             childTickets = int(input("How many CHILD tickets do you require: "))
         break
