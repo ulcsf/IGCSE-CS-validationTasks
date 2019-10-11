@@ -13,11 +13,10 @@ an error message and repeat the question until a valid rating between 0 and 5 is
 while True:
   try:
     starRating = int(input("Enter a star rating between 0 and 5: "))
-    
     while starRating < 0 or starRating > 5:
       print("Invalid star rating - try again!")
       starRating = int(input("Enter a star rating between 0 and 5: "))
     print("Thank you!")
     break
-  except ValueError:
+  except:
     print("Error: Must enter a number")

@@ -5,13 +5,13 @@ based on the calulation in IGCSE Computer Science text book
 **********************************
 '''
 userContinue = "N"
-oddDigits = 0
+oddDigits = 0       #ANSWER = 0 removed
 evenDigits = 0
 
 newCode = input("Enter the code that requires a check digit: ")
 
 
-while userContinue.upper() == "N":
+while userContinue.upper() == "N":          #ANSWER: Missing double =
     while not newCode.isdigit() or len(newCode) != 12:          # Begin validating the user input
         print("You must enter 12 numbers!")
         newCode = input("Enter the code that requires a check digit: ")
@@ -41,6 +41,6 @@ else:
     print("Check Digit = ", checkDigit)
     
 #save it as the new ISBN
-isbn = newCode + str(checkDigit)
+isbn = newCode + str(checkDigit)        #ANSWER value error as checkDigit not string
 print()
-print("Your new ISBN is ", isbn)
+print("Your new ISBN is ", isbn)        #ANSWER missing the variable to show ISBN
