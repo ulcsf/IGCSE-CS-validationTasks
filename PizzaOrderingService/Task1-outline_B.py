@@ -15,7 +15,7 @@ toppings = ["Pepperoni","Chicken","Extra cheese","Mushrooms","Spinach","Olives"]
 baseSizes = ["Small","Medium","Large"]
 baseTypes = ["Thin","Thick"]
 
-#NOTE: No other variable have been created. You may require more than this!!
+#NOTE: No other variables have been created. You may require more than this!!
 
 print("""
 Hi, welcome to the Pizza Ordering Service.
