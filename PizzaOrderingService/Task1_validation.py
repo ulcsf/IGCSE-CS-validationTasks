@@ -4,7 +4,7 @@ The customer is given choices of size, base and additional toppings (number and 
 Only valid choices can be accepted. The customer is asked to confirm their order or alter their 
 choices or not proceed. If the customer confirms their order they are given a unique order number.
 '''
-
+#Lists to the options for the user 
 toppings = ["Pepperoni","Chicken","Extra cheese","Mushrooms","Spinach","Olives"]
 baseSizes = ["Small","Medium","Large"]
 baseTypes = ["Thin","Thick"]
@@ -18,12 +18,12 @@ Press return/enter to continue...
 """)
 input()
 
-orderComplete = "N"
-while orderComplete == "N":
+orderComplete = "N"                             #Flag to allow repetiton of the process 
+while orderComplete == "N":                     #
     orderComplete = False
     print("""What size pizza would you like?
     Enter the option number:""")
-    for i in range(0,len(baseSizes)):
+    for i in range(0,len(baseSizes)):           #iterate through sizes to length of the list. 
         print(i, "-", baseSizes[i])
     customerSize = int(input())
 

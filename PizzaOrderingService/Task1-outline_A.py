@@ -29,28 +29,29 @@ Please follow the on-screen prompts to place your order.
 Press return/enter to continue...
 """)
 input()
-
-#TODO: 2. Ask the user what size base they want and store the answer.
-#HINT:      Show the user the options they have available and ask them to repond. Are there any problems that could happen?
-
-
-
-#TODO: 3. Ask the user to choose a type of pizza base and store the answer
+orderComplete = "N"                             #Flag to allow repetiton of the process 
+while orderComplete == "N":
+    #TODO: 2. Ask the user what size base they want and store the answer.
+    #HINT:      Show the user the options they have available and ask them to repond. Are there any problems that could happen?
 
 
 
-#TODO: 4. Show the customer the extra toppings available. Ask the user to  
+    #TODO: 3. Ask the user to choose a type of pizza base and store the answer
 
 
 
-#TODO: 5. Output the order so the user can check their choices.
-    print("""Thank you. 
-    Please review your choices and confirm your order: 
+    #TODO: 4. Show the customer the extra toppings available. Ask the user to  
 
-    *****YOUR ORDER ****""")
-  
 
-#TODO: 6. Ask the user if their order is correct. If it isn't...let them choose again. Otherwise...give them an order number.
+
+    #TODO: 5. Output the order so the user can check their choices.
+        print("""Thank you. 
+        Please review your choices and confirm your order: 
+
+        *****YOUR ORDER ****""")
+    
+
+    #TODO: 6. Ask the user if their order is correct. If it isn't...let them choose again. Otherwise...give them an order number.
     
     
 print("""
