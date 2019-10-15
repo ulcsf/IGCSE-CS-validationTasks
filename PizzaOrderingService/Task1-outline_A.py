@@ -30,7 +30,7 @@ Press return/enter to continue...
 """)
 input()
 orderComplete = "N"                             #Flag to allow repetiton of the process 
-while orderComplete == "N":
+#while orderComplete == "N":
     #TODO: 2. Ask the user what size base they want and store the answer.
     #HINT:      Show the user the options they have available and ask them to repond. Are there any problems that could happen?
 
@@ -40,15 +40,12 @@ while orderComplete == "N":
 
 
 
-    #TODO: 4. Show the customer the extra toppings available. Ask the user to  
+    #TODO: 4. Show the customer the extra toppings available. Ask the user to select their toppings and store the answer
 
 
 
     #TODO: 5. Output the order so the user can check their choices.
-        print("""Thank you. 
-        Please review your choices and confirm your order: 
 
-        *****YOUR ORDER ****""")
     
 
     #TODO: 6. Ask the user if their order is correct. If it isn't...let them choose again. Otherwise...give them an order number.
