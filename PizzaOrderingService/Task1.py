@@ -41,8 +41,8 @@ while orderComplete == "N":
     Would you like to add extra toppings?""")
     extraToppings = input("Enter Y or N: ")
 
-    if extraToppings == "Y":
-        custTopChoices = []
+    custTopChoices = []
+    if extraToppings == "Y":    
         print("You can add up to 3 additonal toppings.")
         while len(custTopChoices) < 3:
             print("You have added",len(custTopChoices),"toppings.")
@@ -72,7 +72,7 @@ while orderComplete == "N":
     orderComplete = input("""Is your order correct? 
     'Y' to complete your order
     'N' to re-enter you choices
-    >> """)
+    >> """).upper()
     
 print("""
 Thank you!
