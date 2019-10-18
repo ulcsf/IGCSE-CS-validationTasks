@@ -18,6 +18,14 @@ Press return/enter to continue...
 """)
 input()
 
+def checkInput(msg,myList):
+    print("")
+# Message for the user
+# List of acceptable values
+# user input (or does this run in the function)
+
+
+
 orderComplete = "N"                             #Flag to allow repetiton of the process 
 while orderComplete == "N":                     #
     orderComplete = False
