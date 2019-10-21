@@ -25,7 +25,6 @@ def checkInput(msg,myList):
 # user input (or does this run in the function)
 
 
-
 orderComplete = "N"                             #Flag to allow repetiton of the process 
 while orderComplete == "N":                     #
     orderComplete = False

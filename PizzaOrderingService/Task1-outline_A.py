@@ -30,7 +30,7 @@ Press return/enter to continue...
 """)
 input()
 orderComplete = "N"                             #Flag to allow repetiton of the process 
-#while orderComplete == "N":
+while orderComplete == "N":
     #TODO: 2. Ask the user what size base they want and store the answer.
     #HINT:      Show the user the options they have available and ask them to repond. Are there any problems that could happen?
 
