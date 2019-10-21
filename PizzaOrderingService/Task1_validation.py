@@ -40,7 +40,7 @@ while newOrder != "X":
         print("""Thank you. 
         What type of base would you like?
         Enter the option number:""")
-        for i in range(0,len(baseTypes)):
+        for i in range(0,len(baseTypes)):               #iterate through types to length of the list. 
             print(i, "-", baseTypes[i])
         customerType = int(input())
 
@@ -56,7 +56,7 @@ while newOrder != "X":
             while len(custTopChoices) < 3:
                 print("You have added",len(custTopChoices),"toppings.")
                 print("Please select a topping: ")
-                for i in range(0,len(toppings)):
+                for i in range(0,len(toppings)):                #iterate through toppings to length of the list. 
                     print(i, "-", toppings[i])
                 print()
                 print("N - end selection")
