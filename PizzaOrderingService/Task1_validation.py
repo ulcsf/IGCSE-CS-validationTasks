@@ -38,19 +38,31 @@ while newOrder != "X":
         while True:
             try:
                 customerSize = int(input())
-                if customerSize > len(baseSizes):
-                    raise Exception("Sorry that item is not in the list. You must enter 0 to",len(baseSizes))
-            except ValueError:
+            except:
                 print("You must enter a numeric value.")
+            else:
+                if customerSize > len(baseSizes) -1:
+                    print("Out of range - must enter 0 to",len(baseSizes)-1)
+                else:
+                    break
             
-
+           
 
         print("""Thank you. 
         What type of base would you like?
         Enter the option number:""")
         for i in range(0,len(baseTypes)):               #iterate through types to length of the list. 
             print(i, "-", baseTypes[i])
-        customerType = int(input())
+        while True:
+            try:
+                customerType = int(input())
+            except:
+                print("You must enter a numeric value.")
+            else:
+                if customerSize > len(baseTypes) -1:
+                    print("Out of range - must enter 0 to",len(baseTypes)-1)
+                else:
+                    break
 
         extraToppings = "N"
 

@@ -1,6 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\simon.farren\\envs\\pyguizero\\Scripts\\python.exe"
-    "python.pythonPath": "C:\\Users\\Simon\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
 }
