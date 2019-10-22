@@ -1,3 +1,9 @@
 {
+<<<<<<< HEAD
     "python.pythonPath": "C:\\Users\\simon.farren\\envs\\pyguizero\\Scripts\\python.exe"
+=======
+    "python.pythonPath": "C:\\Users\\Simon\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+>>>>>>> 04acd25053cb66d57ef37d9c8b2fda44f1ff74ef
 }
