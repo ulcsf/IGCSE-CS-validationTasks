@@ -10,8 +10,8 @@ toppings = ["Pepperoni","Chicken","Extra cheese","Mushrooms","Spinach","Olives"]
 baseSizes = ["Small","Medium","Large"]
 baseTypes = ["Thin","Thick"]
 
-customerSize = 0
-customerType = 0
+customerSize = -1
+customerType = -1
 #custTopChoices = []
 
 orderNumber = 100
@@ -35,7 +35,15 @@ while newOrder != "X":
         Enter the option number:""")
         for i in range(0,len(baseSizes)):           #iterate through sizes to length of the list. 
             print(i, "-", baseSizes[i])
-        customerSize = int(input())
+        while True:
+            try:
+                customerSize = int(input())
+                if customerSize > len(baseSizes):
+                    raise Exception("Sorry that item is not in the list. You must enter 0 to",len(baseSizes))
+            except ValueError:
+                print("You must enter a numeric value.")
+            
+
 
         print("""Thank you. 
         What type of base would you like?
