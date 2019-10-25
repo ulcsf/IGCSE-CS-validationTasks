@@ -1,0 +1,14 @@
+small
+thin
+y
+pepperoni
+olives
+mushrooms
+
+
+LaRge
+thick
+y
+pepperoni
+chicken
+mushrooms
