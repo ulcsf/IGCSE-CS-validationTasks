@@ -14,6 +14,12 @@ customerSize = -1
 customerType = -1
 #custTopChoices = []
 
+pizzasOrdered = 0
+baseSizeOrders = [0, 0, 0]
+baseTypeOrders = [0, 0]
+toppingOrders = [0, 0, 0, 0, 0, 0]
+
+
 orderNumber = 100
 newOrder = ""
 
@@ -112,6 +118,51 @@ while True:                                         # Why have I used this inste
             time.sleep(3)
             print("Your order will be ready soon. Please come back soon.")
             time.sleep(2)
+
+            pizzasOrdered += 1
+
+            if customerSize == "Small":
+                baseSizeOrders[0] += 1
+            elif customerSize == "Medium":
+                baseSizeOrders[1] += 1
+            elif customerSize == "Large":
+                baseSizeOrders[2] += 1
+
+            if customerType == "Thin":
+                baseTypeOrders[0] += 1
+            elif customerType == "Thick":
+                baseTypeOrders[1] += 1
+
+            for topping in custTopChoices:
+                if topping == "Pepperoni":
+                    toppingOrders[0] +=1
+                elif topping == "Chicken":
+                    toppingOrders[1] +=1
+                elif topping == "Extra cheese":
+                    toppingOrders[2] +=1
+                elif topping == "Mushrooms":
+                    toppingOrders[3] +=1
+                elif topping == "Spinach":
+                    toppingOrders[4] +=1
+                elif topping == "Olives":
+                    toppingOrders[5] +=1
+
+    print("Number of pizzas ordered:", pizzasOrdered)
+    print("Base Sizes: ")
+    for i in range(0, len(baseSizeOrders)):
+        print(baseSizes[i], "-", baseSizeOrders[i])
+
+    print("\nBase Types: ")
+    for i in range(0, len(baseTypeOrders)):
+        print(baseTypes[i], "-", baseTypeOrders[i])
+
+    print("\nToppings: ")
+    for i in range(0, len(toppings)):
+        print(toppings[i], "-", toppingOrders[i])
+
+
+
+
     newOrder = input("Press ENTER to start a new order ").upper()
     
     #if newOrder == "X":
